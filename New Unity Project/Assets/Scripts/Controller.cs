@@ -18,11 +18,21 @@ public class Controller : MonoBehaviour
             transform.position += Vector3.left;
         if(Input.GetKey(KeyCode.D))
             transform.position += Vector3.right;
+        if(Input.GetKey(KeyCode.Q))
+            transform.position += Vector3.up;
+        if(Input.GetKey(KeyCode.E))
+            transform.position += Vector3.down;
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             CollisionManager.SetCurrentSelectedBallBounce();
-            if(CollisionManager.GetCurrentSelectedBallBounce() != null)
+            if(!CollisionManager.isNoBallBounceSelected())
             transform.LookAt(CollisionManager.GetCurrentSelectedBallBounce().transform);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && !CollisionManager.isNoBallBounceSelected())
+        {
+            BallBounce current = CollisionManager.GetCurrentSelectedBallBounce();
+            current.velocity += ((transform.forward).normalized) * 50;
         }
     }
 }
