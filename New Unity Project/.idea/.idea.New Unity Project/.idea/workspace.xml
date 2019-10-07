@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e722ab0-36ce-44f0-b975-3a8415085848" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BouncingBalls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BouncingBalls.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +115,8 @@
       <workItem from="1570372976298" duration="600000" />
       <workItem from="1570395890204" duration="1812000" />
       <workItem from="1570433729312" duration="260000" />
+      <workItem from="1570434373254" duration="162000" />
+      <workItem from="1570435108755" duration="5000" />
     </task>
     <servers />
   </component>
@@ -150,32 +149,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs</url>
-          <line>112</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" initialLine="115">
-            <startOffsets>
-              <option value="3757" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3794" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs</url>
-          <line>72</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" initialLine="73">
-            <startOffsets>
-              <option value="2122" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2163" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
