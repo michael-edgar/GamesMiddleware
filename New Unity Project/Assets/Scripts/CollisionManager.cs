@@ -51,7 +51,6 @@ public class CollisionManager : MonoBehaviour
             if (distance < CollisionDistance)
             {
                 ResolveCollisionPlane(currentBounce, currentPlane);
-                currentBounce.hasCollided = true;
             }
         }
     }
@@ -72,8 +71,6 @@ public class CollisionManager : MonoBehaviour
             if (distance < CollisionDistance)
             {
                 ResolveCollisionSphere(bounce1, bounce2);
-                bounce1.hasCollided = true;
-                bounce2.hasCollided = true;
             }
         }
     }

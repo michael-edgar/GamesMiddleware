@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e722ab0-36ce-44f0-b975-3a8415085848" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/Assets/Scripts/Movement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/Assets/Scripts/Movement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation/Assets/Standard Assets/MyAssets/Ethan2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation/Assets/Standard Assets/MyAssets/Ethan2.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BouncingBalls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BouncingBalls.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Plane.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +19,13 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/d0/7049ec2b/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plane.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3232360-D51C-46C7-86DD-547E2F0B3F8B/6c/7f07c677/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3232360-D51C-46C7-86DD-547E2F0B3F8B/e4/025a0f60/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/52/22432d03/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/d0/7049ec2b/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3232360-D51C-46C7-86DD-547E2F0B3F8B/e4/025a0f60/Time.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/0b/11fd650e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -57,9 +38,9 @@
         <option value="$PROJECT_DIR$/Assets/BallBounce.cs" />
         <option value="$PROJECT_DIR$/Assets/Plane.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Plane.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallBounce.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" />
       </list>
     </option>
   </component>
@@ -136,6 +117,7 @@
       <workItem from="1570364364849" duration="3994000" />
       <workItem from="1570372976298" duration="600000" />
       <workItem from="1570395890204" duration="1812000" />
+      <workItem from="1570433729312" duration="260000" />
     </task>
     <servers />
   </component>
@@ -170,26 +152,26 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs</url>
-          <line>115</line>
+          <line>112</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" initialLine="115">
             <startOffsets>
-              <option value="3895" />
+              <option value="3757" />
             </startOffsets>
             <endOffsets>
-              <option value="3932" />
+              <option value="3794" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs</url>
-          <line>73</line>
+          <line>72</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" initialLine="73">
             <startOffsets>
-              <option value="2172" />
+              <option value="2122" />
             </startOffsets>
             <endOffsets>
-              <option value="2213" />
+              <option value="2163" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
