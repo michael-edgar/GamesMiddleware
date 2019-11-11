@@ -6,6 +6,7 @@
     <e p="C:\Users\micha\OneDrive\Documents\GitHub\GamesMiddleware\New Unity Project" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="README.txt" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BallBounce.cs" t="Include" />
           <e p="CollisionManager.cs" t="Include" />

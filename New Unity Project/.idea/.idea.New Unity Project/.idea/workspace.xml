@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e722ab0-36ce-44f0-b975-3a8415085848" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +18,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/d0/7049ec2b/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Plane.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3232360-D51C-46C7-86DD-547E2F0B3F8B/6c/7f07c677/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E3232360-D51C-46C7-86DD-547E2F0B3F8B/e4/025a0f60/Time.cs" root0="SKIP_HIGHLIGHTING" />
@@ -73,10 +74,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17988">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1344">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17988" />
+      <option name="pid" value="1344" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -117,6 +118,7 @@
       <workItem from="1570433729312" duration="260000" />
       <workItem from="1570434373254" duration="162000" />
       <workItem from="1570435108755" duration="5000" />
+      <workItem from="1570436173702" duration="215000" />
     </task>
     <servers />
   </component>
@@ -149,6 +151,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs</url>
+          <line>105</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" initialLine="105">
+            <startOffsets>
+              <option value="3507" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3570" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

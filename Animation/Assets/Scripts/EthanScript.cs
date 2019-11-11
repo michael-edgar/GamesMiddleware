@@ -1,29 +1,108 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EthanScript : MonoBehaviour
 {
-    private Animator anim;
-    private int jumpHash = Animator.StringToHash("jump");
-    int walkStateHash = Animator.StringToHash("Base Layer.Walk");
-    
+    private Animator _mAnim;
+    private int _jumpHash;
+    private int _fallHash;
+    private int _crouchHash;
+    private int _punchHash;
+    private int _kickHash;
+    private string _jumpState;
+    private string _fallState;
+    private string _punchState;
+    private string _kickState;
+    private readonly Vector3 _leftArmWorld = new Vector3(-15, -5, -20);
+    private readonly Vector3 _rightArmWorld = new Vector3(3,1,1);
+    public Transform target;
+
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        SetUpStatesAndParameters();
+        _mAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float move = Input.GetAxis("Vertical");
-        anim.SetFloat("Speed", move);
+        _mAnim.SetFloat("Speed", move);
+        
+        for(int i = 0; i < _mAnim.layerCount; i++) ResetBools(i);
 
-        AnimaterStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        if (Input.GetKeyDown(KeyCode.Space) && stateInfo.nameHash == walkStateHash)
+        if (Input.GetKeyDown(KeyCode.Space)) _mAnim.SetBool(_jumpHash, true);
+
+        if (Input.GetKeyDown(KeyCode.K)) _mAnim.SetBool(_kickHash, true);
+
+        if (Input.GetKeyDown(KeyCode.LeftControl)) _mAnim.SetBool(_crouchHash, !_mAnim.GetBool(_crouchHash));
+
+        if (Input.GetKeyDown(KeyCode.P)) _mAnim.SetBool(_punchHash, true);
+
+        if (Input.GetKeyDown(KeyCode.Y)) BadDab();
+        
+        if (Input.GetKeyDown(KeyCode.M)) RotateTheArm();
+    }
+
+    private void LateUpdate()
+    {
+        if (Input.GetKey(KeyCode.Y)) BadDab();
+    }
+
+    private Vector3 WorldToLocal(Vector3 worldPosition) => worldPosition.x * transform.right + worldPosition.y * transform.up + worldPosition.z * transform.forward;
+
+    private void BadDab()
+    {
+        _mAnim.GetBoneTransform(HumanBodyBones.RightShoulder).LookAt(WorldToLocal(_rightArmWorld));
+        _mAnim.GetBoneTransform(HumanBodyBones.LeftLowerArm).LookAt(WorldToLocal(_leftArmWorld));
+
+    }
+
+    private void RotateTheArm()
+    {
+        Transform arm = _mAnim.GetBoneTransform(HumanBodyBones.LeftShoulder);
+        arm.rotation = Quaternion.AngleAxis(30, Vector3.up);
+    }
+
+    private void SetUpStatesAndParameters()
+    {
+        StateDriver.Initialise();
+        ParameterDriver.Initialise();
+        
+        _jumpState = StateDriver.GetState(StateDriver.States.Jump);
+        _fallState = StateDriver.GetState(StateDriver.States.Fall);
+        _punchState = StateDriver.GetState(StateDriver.States.Punch);
+        _kickState = StateDriver.GetState(StateDriver.States.Kick);
+        _jumpHash = ParameterDriver.GetParameterHash(ParameterDriver.Parameters.Jump);
+        _fallHash = ParameterDriver.GetParameterHash(ParameterDriver.Parameters.Fall);
+        _crouchHash = ParameterDriver.GetParameterHash(ParameterDriver.Parameters.Crouch);
+        _punchHash = ParameterDriver.GetParameterHash(ParameterDriver.Parameters.Punch);
+        _kickHash = ParameterDriver.GetParameterHash(ParameterDriver.Parameters.Kick);
+    }
+
+    private AnimatorStateInfo GetCurrentStateHash(int layer) => _mAnim.GetCurrentAnimatorStateInfo(layer);
+
+    private void ResetBools(int layer)
+    {
+        AnimatorStateInfo currentState = GetCurrentStateHash(layer);
+        switch (layer)
         {
-            anim.SetTrigger(jumpHash);
+            case 0:
+                ResetBool(currentState, _jumpHash, _jumpState);
+                ResetBool(currentState, _fallHash, _fallState);
+                break;
+            case 1:
+                ResetBool(currentState, _punchHash, _punchState);
+                ResetBool(currentState, _kickHash, _kickState);
+                break;
         }
+    }
+
+    private void ResetBool(AnimatorStateInfo currentState, int hash, String state)
+    {
+        if (!currentState.IsName(state) && _mAnim.GetBool(hash)) _mAnim.SetBool(hash, false);
     }
 }
