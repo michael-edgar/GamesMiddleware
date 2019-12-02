@@ -17,7 +17,6 @@ public class EthanScript : MonoBehaviour
     private string _kickState;
     private readonly Vector3 _leftArmWorld = new Vector3(-15, -5, -20);
     private readonly Vector3 _rightArmWorld = new Vector3(3,1,1);
-    public Transform target;
 
     // Start is called before the first frame update
     void Start()

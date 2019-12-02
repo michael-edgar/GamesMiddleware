@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class ParameterDriver
+public static class ParameterDriver
 {
     public enum Parameters { Speed, VelocityX, VelocityZ, Jump, Fall, Crouch, Punch, Kick }
     private static List<Parameter> _parameters;
